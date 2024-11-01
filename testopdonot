@@ -1,0 +1,48 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/REDzHUB/LibraryV2/main/redzLib")))()
+
+MakeWindow({
+  Hub = {
+    Title = "LC Scripts",
+    Animation = "Made at LC"
+  },
+  Key = {
+    KeySystem = false,
+    Title = "Key System",
+    Description = "",
+    KeyLink = "",
+    Keys = {"test"},
+    Notifi = {
+      Notifications = true,
+      CorrectKey = "Running the Script...",
+      Incorrectkey = "The key is incorrect",
+      CopyKeyLink = "Copied to Clipboard"
+    }
+  }
+})
+
+MinimizeButton({
+  Image = "",
+  Size = {40, 40},
+  Color = Color3.fromRGB(10, 10, 10),
+  Corner = true,
+  Stroke = false,
+  StrokeColor = Color3.fromRGB(255, 0, 0)
+})
+
+local Main = MakeTab({Name = "Rizzler menu"})
+
+local section = AddSection(Main, {"test1"})
+AddButton(Main, {
+    Name = "test2",
+    Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
+    end
+  })
+
+  local section = AddSection(Main, {"tes"})
+  AddButton(Main, {
+      Name = "test3",
+      Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/eCpipCTH"))()
+      end
+    })
